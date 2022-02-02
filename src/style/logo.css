@@ -1,0 +1,9 @@
+.logo {
+  margin: 10px;
+  height: 40px;
+  background-color: gray;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 600;
+  text-align: center;
+}
