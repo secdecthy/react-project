@@ -1,8 +1,8 @@
 // import { useState } from 'react';
-import { Switch , Route } from 'react-router-dom';
+import { Switch, Route } from "react-router-dom";
 
-import Login from './pages/Login';
-import Main from './pages/Main';
+import Login from "./pages/Login";
+import Main from "./pages/Main";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -10,15 +10,15 @@ function App() {
   return (
     <>
       <Switch>
-        <Route path="/login">
-          <Login/>
+        <Route path="/" exact>
+          <Login />
         </Route>
         <Route path="/admin">
-          <Main/>
+          <Main />
         </Route>
       </Switch>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
