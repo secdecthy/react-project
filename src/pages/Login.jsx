@@ -1,6 +1,6 @@
 import { Form, Input, Button, Checkbox, Row, Col, message } from "antd";
 import { useHistory } from "react-router-dom";
-// import jpg2022 from "../img/2022.jpg";
+import jpg2022 from "../img/2022.jpg";
 
 import { loginAPI } from "../API/loginAPI";
 import { setToken } from "../NET/tools";
@@ -25,14 +25,20 @@ function Login() {
   };
 
   return (
-    <div style={{ position: "relative" }}>
-      {/* <img
+    <div>
+      <img
         src={jpg2022}
         alt=""
-        style={{ position: "absolute", width: "100vw", height: "100vh" }}
-      /> */}
+        style={{
+          position: "fixed",
+          bottom: "0px",
+          left: "0",
+          right: "0",
+          margin: "auto",
+        }}
+      />
       <Row style={{ paddingTop: "5vh" }}>
-        <Col span={10} offset={5}>
+        <Col span={6} offset={8}>
           <Form
             name="basic"
             labelCol={{ span: 8 }}
